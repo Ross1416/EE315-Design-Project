@@ -1,0 +1,132 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2020.1                 C:/Xilinx/Vivado/2020.1
+Matlab 9.8.0.1873465 (R2020a) Update 8  C:\Program Files\MATLAB\R2020a
+Vivado 2020.1                           C:/Xilinx/Vivado/2020.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Rates and types converged for the feedback path through t...
+    Blocks: 'RNG_LFSR_4bit_manual/Logical', et al.
+Error 0002: Rates and types converged for the feedback path through t...
+    Blocks: 'RNG_LFSR_4bit_manual/Logical', et al.
+Error 0003: Internal Block Error: Set illegal rate
+     Block: 'RNG_LFSR_4bit_manual/Logical'
+Error 0004: Internal Block Error: Set illegal type
+     Block: 'RNG_LFSR_4bit_manual/Logical'
+Error 0005: Internal Block Error: Set illegal rate
+     Block: 'RNG_LFSR_4bit_manual/Logical'
+Error 0006: Internal Block Error: Set illegal type
+     Block: 'RNG_LFSR_4bit_manual/Logical'
+Error 0007: Internal Block Error: Set illegal rate
+     Block: 'RNG_LFSR_4bit_manual/Logical'
+Error 0008: Internal Block Error: Set illegal type
+     Block: 'RNG_LFSR_4bit_manual/Logical'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+  'RNG_LFSR_4bit_manual/Register'
+  'RNG_LFSR_4bit_manual/Register1'
+  'RNG_LFSR_4bit_manual/Register2'
+  'RNG_LFSR_4bit_manual/Register3'
+
+Details:
+Rates and types converged for the feedback path through these
+blocks. However, the solution contains unknowns.  Could not
+establish rates for the blocks listed at the end of this message.
+
+You may need to add an "Assert" block to instruct the system how
+to resolve rates and types.
+
+In the debugging of this problem, you may find it helpful to have
+the sample rates displayed on the Simulink diagram. This will
+happen if you open the System Generator block's dialog box, set
+its "Block Icon Display" control to "Sample Rates", and then
+update the diagram.
+
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+  'RNG_LFSR_4bit_manual/Register'
+  'RNG_LFSR_4bit_manual/Register1'
+  'RNG_LFSR_4bit_manual/Register2'
+  'RNG_LFSR_4bit_manual/Register3'
+
+Details:
+Rates and types converged for the feedback path through these
+blocks. However, the solution contains unknowns.  Could not
+establish types for the blocks listed at the end of this message.
+
+You may need to add an "Assert" block to instruct the system how
+to resolve rates and types.
+
+Debugging can also be assisted by turning on the display of
+types, either by setting the Block Display control on the System
+Generator block or by turning on Simulink's "Format -> Signal
+Display -> Port Data Type" control.
+
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+
+Details:
+Internal Block Error: This block has an unknown rate on its "y" port
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+
+Details:
+Internal Block Error: This block set an illegal type on its "y"
+port. The type setting was illegal because Unknown type.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+
+Details:
+Internal Block Error: This block has an unknown rate on its "d0" port
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+
+Details:
+Internal Block Error: This block set an illegal type on its "d0"
+port. The type setting was illegal because Unknown type.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+
+Details:
+Internal Block Error: This block has an unknown rate on its "d1" port
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit_manual/Logical'
+
+Details:
+Internal Block Error: This block set an illegal type on its "d1"
+port. The type setting was illegal because Unknown type.
+--------------------------------------------------------------------------------
