@@ -1,0 +1,23 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2020.1                 C:/Xilinx/Vivado/2020.1
+Matlab 9.8.0.1873465 (R2020a) Update 8  C:\Program Files\MATLAB\R2020a
+Vivado 2020.1                           C:/Xilinx/Vivado/2020.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal type on port: rst
+     Block: 'RNG_LFSR_4bit/LFSR'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_LFSR_4bit/LFSR'
+
+Details:
+The rst port has data type UFix_4_0.
+The rst port must be a boolean signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
