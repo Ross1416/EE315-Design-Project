@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver ro_test01
+ OPTION supported_peripherals = (ro_test01_v1_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = ro_test01;
+ OPTION version = 1.0;
+END driver
