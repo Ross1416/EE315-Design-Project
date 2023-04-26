@@ -1,0 +1,62 @@
+{
+  'Line_100' => {
+    'CodeInstance' => 'rng_struct/convert3',
+    'Instance' => 'convert3',
+    'SimulinkInstance' => 'RNG/Convert3'
+  },
+  'Line_121' => {
+    'CodeInstance' => 'rng_struct/convert4',
+    'Instance' => 'convert4',
+    'SimulinkInstance' => 'RNG/Convert4'
+  },
+  'Line_142' => {
+    'CodeInstance' => 'rng_struct/convert5',
+    'Instance' => 'convert5',
+    'SimulinkInstance' => 'RNG/Convert5'
+  },
+  'Line_163' => {
+    'CodeInstance' => 'rng_struct/convert6',
+    'Instance' => 'convert6',
+    'SimulinkInstance' => 'RNG/Convert6'
+  },
+  'Line_184' => {
+    'CodeInstance' => 'rng_struct/lfsr',
+    'Instance' => 'lfsr',
+    'SimulinkInstance' => 'RNG/LFSR'
+  },
+  'Line_211' => {
+    'CodeInstance' => 'rng_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_263' => {
+    'CodeInstance' => 'rng_axi_lite_interface',
+    'Instance' => 'rng_axi_lite_interface',
+    'SimulinkInstance' => ''
+  },
+  'Line_290' => {
+    'CodeInstance' => 'rng_default_clock_driver',
+    'Instance' => 'rng_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_298' => {
+    'CodeInstance' => 'rng_struct',
+    'Instance' => 'rng_struct',
+    'SimulinkInstance' => 'RNG'
+  },
+  'Line_37' => {
+    'CodeInstance' => 'rng_struct/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'RNG/Convert'
+  },
+  'Line_58' => {
+    'CodeInstance' => 'rng_struct/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'RNG/Convert1'
+  },
+  'Line_79' => {
+    'CodeInstance' => 'rng_struct/convert2',
+    'Instance' => 'convert2',
+    'SimulinkInstance' => 'RNG/Convert2'
+  }
+}
