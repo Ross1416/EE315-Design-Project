@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 29 18:07:05 2023
+# Process ID: 13288
+# Current directory: C:/Users/ringl/Documents/Uni Classes/Y3S2/EE315/Design Project/EE315-Design-Project/rng_test01_ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13284 C:\Users\ringl\Documents\Uni Classes\Y3S2\EE315\Design Project\EE315-Design-Project\rng_test01_ip\rng_test01_ip.xpr
+# Log file: C:/Users/ringl/Documents/Uni Classes/Y3S2/EE315/Design Project/EE315-Design-Project/rng_test01_ip/vivado.log
+# Journal file: C:/Users/ringl/Documents/Uni Classes/Y3S2/EE315/Design Project/EE315-Design-Project/rng_test01_ip\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ringl/Documents/Uni Classes/Y3S2/EE315/Design Project/EE315-Design-Project/rng_test01_ip/rng_test01_ip.xpr}
+update_compile_order -fileset sources_1
