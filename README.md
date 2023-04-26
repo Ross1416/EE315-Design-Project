@@ -1,7 +1,7 @@
 # EE315-Design-Project
 ## University of Strathclyde
 ## Group A - Bingo
-Sean Coll, Ellie Forsyth and Ross Inglis
+### Sean Coll, Ellie Forsyth and Ross Inglis
 
 Supervisors: Louise Crockett, David Northcote and Marius Siauciulis
 
