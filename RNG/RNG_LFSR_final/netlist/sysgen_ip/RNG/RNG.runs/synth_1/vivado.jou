@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 26 16:07:43 2023
+# Process ID: 2260
+# Current directory: C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/synth_1
+# Command line: vivado.exe -log rng_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rng_wrapper.tcl
+# Log file: C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/synth_1/rng_wrapper.vds
+# Journal file: C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source rng_wrapper.tcl -notrace

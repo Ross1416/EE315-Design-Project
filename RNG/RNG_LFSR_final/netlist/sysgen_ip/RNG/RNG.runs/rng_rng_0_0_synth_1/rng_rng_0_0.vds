@@ -1,0 +1,603 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 26 16:05:49 2023
+# Process ID: 5444
+# Current directory: C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1
+# Command line: vivado.exe -log rng_rng_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rng_rng_0_0.tcl
+# Log file: C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1/rng_rng_0_0.vds
+# Journal file: C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rng_rng_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/RNG_LFSR_final/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top rng_rng_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25056
+WARNING: [Synth 8-1958] event expressions must result in a singular type [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_axi_lite_interface_verilog.v:261]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rng_rng_0_0' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ip/rng_rng_0_0/synth/rng_rng_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'rng' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'rng_axi_lite_interface' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:2044]
+INFO: [Synth 8-3491] module 'rng_axi_lite_interface_verilog' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_axi_lite_interface_verilog.v:38' bound to instance 'inst' of component 'rng_axi_lite_interface_verilog' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:2074]
+INFO: [Synth 8-6157] synthesizing module 'rng_axi_lite_interface_verilog' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_axi_lite_interface_verilog.v:38]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_NUM_OFFSETS bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 3 - type: integer 
+	Parameter ADDR_MSB bound to: 4 - type: integer 
+	Parameter DEC_SIZE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rng_axi_lite_interface_verilog' (1#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_axi_lite_interface_verilog.v:38]
+INFO: [Synth 8-256] done synthesizing module 'rng_axi_lite_interface' (2#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:2044]
+INFO: [Synth 8-638] synthesizing module 'rng_default_clock_driver' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 1 - type: integer 
+	Parameter log_2_period bound to: 1 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg_w_init' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_single_reg_w_init' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_single_reg_w_init' (3#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg_w_init' (4#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (5#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'rng_default_clock_driver' (6#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'rng_struct' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'rng_xlconvert' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+	Parameter din_width bound to: 7 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter din_width bound to: 7 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_rng_xlconvert' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:69' bound to instance 'convert' of component 'convert_func_call_rng_xlconvert' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_rng_xlconvert' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter din_width bound to: 7 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_rng_xlconvert' (7#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:20' bound to instance 'reg' of component 'synth_reg' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_srlc33e' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_srlc33e' (8#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg' (9#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'rng_xlconvert' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'rng_xlconvert__parameterized0' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+	Parameter din_width bound to: 1 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:20' bound to instance 'reg' of component 'synth_reg' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg__parameterized0' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_srlc33e__parameterized0' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_srlc33e__parameterized0' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg__parameterized0' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'rng_xlconvert__parameterized0' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'rng_xlconvert__parameterized1' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 64 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 64 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_rng_xlconvert' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:69' bound to instance 'convert' of component 'convert_func_call_rng_xlconvert' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_rng_xlconvert__parameterized1' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 64 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_rng_xlconvert__parameterized1' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:20' bound to instance 'reg' of component 'synth_reg' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg__parameterized1' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_srlc33e__parameterized1' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_srlc33e__parameterized1' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg__parameterized1' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'rng_xlconvert__parameterized1' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'rng_xlconvert__parameterized2' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_rng_xlconvert' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:69' bound to instance 'convert' of component 'convert_func_call_rng_xlconvert' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_rng_xlconvert__parameterized3' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_rng_xlconvert__parameterized3' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:20' bound to instance 'reg' of component 'synth_reg' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'rng_xlconvert__parameterized2' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'rng_xlconvert__parameterized3' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+	Parameter din_width bound to: 64 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 7 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter din_width bound to: 64 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 7 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_rng_xlconvert' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:69' bound to instance 'convert' of component 'convert_func_call_rng_xlconvert' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_rng_xlconvert__parameterized5' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter din_width bound to: 64 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 7 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_rng_xlconvert__parameterized5' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:84]
+	Parameter width bound to: 7 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:20' bound to instance 'reg' of component 'synth_reg' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg__parameterized2' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 7 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 7 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_srlc33e__parameterized2' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+	Parameter width bound to: 7 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:75]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_srlc33e__parameterized2' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg__parameterized2' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'rng_xlconvert__parameterized3' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'sysgen_lfsr_471d32d566' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized0' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 1'b1 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 1'b1 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized0' [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized0' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized0' (10#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_lfsr_471d32d566' (11#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_entity_declarations.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'rng_struct' (12#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'rng' (13#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng.vhd:252]
+INFO: [Synth 8-6155] done synthesizing module 'rng_rng_0_0' (14#1) [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ip/rng_rng_0_0/synth/rng_rng_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1020.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ip/rng_rng_0_0/constrs/rng.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.srcs/sources_1/bd/rng/ip/rng_rng_0_0/constrs/rng.xdc] for cell 'inst'
+Parsing XDC File [C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1020.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 107 instances were transformed.
+  FDE => FDRE: 107 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 68    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 48    
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 69    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 1020.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 1025.723 ; gain = 5.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 1025.723 ; gain = 5.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 1025.723 ; gain = 5.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 1025.723 ; gain = 5.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 1025.723 ; gain = 5.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 1025.723 ; gain = 5.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |    65|
+|4     |LUT4 |    24|
+|5     |LUT6 |    36|
+|6     |FDE  |    82|
+|7     |FDRE |   204|
+|8     |FDSE |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 1025.723 ; gain = 5.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:04 . Memory (MB): peak = 1025.723 ; gain = 5.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:09 . Memory (MB): peak = 1025.723 ; gain = 5.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1025.723 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 82 instances were transformed.
+  FDE => FDRE: 82 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+195 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:24 . Memory (MB): peak = 1036.762 ; gain = 16.074
+INFO: [Common 17-1381] The checkpoint 'C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1/rng_rng_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP rng_rng_0_0, cache-ID = 5369127f7998b9f1
+INFO: [Coretcl 2-1174] Renamed 28 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/RNG_LFSR_final/netlist/sysgen_ip/RNG/RNG.runs/rng_rng_0_0_synth_1/rng_rng_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rng_rng_0_0_utilization_synth.rpt -pb rng_rng_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 26 16:07:24 2023...

@@ -1,0 +1,13 @@
+verilog xil_defaultlib --include "../../../../RNG.srcs/sources_1/bd/rng/ipshared/ec67/hdl" --include "../../../../RNG.srcs/sources_1/bd/rng/ipshared/6b56/hdl" --include "../../../../RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl" \
+"../../../bd/rng/ip/rng_processing_system7_0_0/sim/rng_processing_system7_0_0.v" \
+"../../../../RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/rng_axi_lite_interface_verilog.v" \
+"../../../../RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg.v" \
+"../../../../RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/synth_reg_w_init.v" \
+"../../../../RNG.srcs/sources_1/bd/rng/ipshared/b04c/hdl/convert_type.v" \
+"../../../bd/rng/ip/rng_rng_0_0/sim/rng_rng_0_0.v" \
+"../../../bd/rng/ip/rng_auto_pc_0/sim/rng_auto_pc_0.v" \
+"../../../bd/rng/sim/rng.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
