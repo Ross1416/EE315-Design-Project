@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 19 12:16:52 2023
+# Process ID: 22240
+# Current directory: C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist/vivado.log
+# Journal file: C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist/ip_catalog'
+IP Repository Located at : C:/Xilinx/Vivado/2020.1/data/ip
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist/ip_catalog'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist/ip_catalog/ro_test01.srcs/sources_1'.
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: An error occurred when creating the Vivado project.
+error copying "{C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist/sysgen/ro_test01_clock.xdc}": no such file or directory
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 12:16:55 2023...

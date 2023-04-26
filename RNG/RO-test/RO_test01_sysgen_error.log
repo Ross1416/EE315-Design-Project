@@ -1,0 +1,29 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2020.1                 C:/Xilinx/Vivado/2020.1
+Matlab 9.8.0.1873465 (R2020a) Update 8  C:\Program Files\MATLAB\R2020a
+Vivado 2020.1                           C:/Xilinx/Vivado/2020.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: ERROR: An error occurred when creating the Vivado project...
+     Block: Unspecified
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  Unspecified
+
+Details:
+ERROR: An error occurred when creating the Vivado project.
+error copying
+"{C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design
+Project/EE315-Design-Project/RNG/RO-test/netlist/sysgen/ro_test01_clock.xdc}":
+no such file or directory
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 12:18:44 2023...
+... 
+
+For more information please refer to
+'C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist/vivado.log'
+
+--------------------------------------------------------------------------------

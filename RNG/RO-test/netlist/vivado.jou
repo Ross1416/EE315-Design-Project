@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 19 12:18:40 2023
+# Process ID: 24160
+# Current directory: C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist/vivado.log
+# Journal file: C:/Users/ringl/OneDrive/Uni_PC_backup/Y3S2/EE315/Design Project/EE315-Design-Project/RNG/RO-test/netlist\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

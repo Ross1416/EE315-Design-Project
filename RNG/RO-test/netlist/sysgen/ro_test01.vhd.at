@@ -1,0 +1,57 @@
+{
+  'Line_105' => {
+    'CodeInstance' => 'ro_test01_struct/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'RO_test01/Register'
+  },
+  'Line_135' => {
+    'CodeInstance' => 'ro_test01_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_185' => {
+    'CodeInstance' => 'ro_test01_axi_lite_interface',
+    'Instance' => 'ro_test01_axi_lite_interface',
+    'SimulinkInstance' => ''
+  },
+  'Line_209' => {
+    'CodeInstance' => 'ro_test01_default_clock_driver',
+    'Instance' => 'ro_test01_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_217' => {
+    'CodeInstance' => 'ro_test01_struct',
+    'Instance' => 'ro_test01_struct',
+    'SimulinkInstance' => 'RO_test01'
+  },
+  'Line_30' => {
+    'CodeInstance' => 'ro_test01_struct/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'RO_test01/Convert'
+  },
+  'Line_51' => {
+    'CodeInstance' => 'ro_test01_struct/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'RO_test01/Convert1'
+  },
+  'Line_72' => {
+    'CodeInstance' => 'ro_test01_struct/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'RO_test01/Inverter'
+  },
+  'Line_80' => {
+    'CodeInstance' => 'ro_test01_struct/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'RO_test01/Inverter1'
+  },
+  'Line_88' => {
+    'CodeInstance' => 'ro_test01_struct/inverter2',
+    'Instance' => 'inverter2',
+    'SimulinkInstance' => 'RO_test01/Inverter2'
+  },
+  'Line_96' => {
+    'CodeInstance' => 'ro_test01_struct/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'RO_test01/Logical'
+  }
+}

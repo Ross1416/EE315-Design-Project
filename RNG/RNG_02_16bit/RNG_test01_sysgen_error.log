@@ -1,0 +1,23 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2020.1                 C:/Xilinx/Vivado/2020.1
+Matlab 9.8.0.1873465 (R2020a) Update 8  C:\Program Files\MATLAB\R2020a
+Vivado 2020.1                           C:/Xilinx/Vivado/2020.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal input type on port: din
+     Block: 'RNG_test01/LFSR'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'RNG_test01/LFSR'
+
+Details:
+The din port is being driven by a UFix_7_0.
+The number of bits in the din input signal must be the same as
+the number of bits in the LFSR.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
