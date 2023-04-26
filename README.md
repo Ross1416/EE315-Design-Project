@@ -14,7 +14,7 @@ The "PYNQ" folder contains all the files required to get the design up and runni
 The "RNG" folder contains both the final RNG design and previous versions. The final system generator design can be found in "RNG_LFSR_FINAL".
 
 Player Directions:
-- To play, run all cells and press Start.
+- To play, run all cells (remembering to enter number of players at the top) and press Start.
 - To reset, run all cells. 
 - If saving the notebook, beware of audio widgets. Re-run cells to remove audio widgets. As reloading the file will play all audio widgets simultaneously.
 - Have Fun!
