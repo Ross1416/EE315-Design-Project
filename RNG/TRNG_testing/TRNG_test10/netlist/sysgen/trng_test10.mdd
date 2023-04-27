@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver trng_test10
+ OPTION supported_peripherals = (trng_test10_v1_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = trng_test10;
+ OPTION version = 1.0;
+END driver
